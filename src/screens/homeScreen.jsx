@@ -1,21 +1,16 @@
-import { Button, Text, View } from "react-native"
+import { Text, View } from "react-native";
+import { Button } from "react-native-paper";
+import { styles } from "../components/styles";
 
 export const HomeScreen = ({ navigation }) => {
-    return (
-        <View>
-            <Text>Home page</Text>
-            <Button title='Ir para Sobre'
-                onPress={() => navigation.navigate("Sobre")} />
-
-<Text>Home page</Text>
-            <Button title='Ir para Blue'
-                onPress={() => navigation.navigate("Blue")} />
-
-<Text>Home page</Text>
-            <Button title='Ir para Yellow'
-                onPress={() => navigation.navigate("yellow")} />
-
-        </View>
-    );
-    
+  return (
+    <View style={styles.formulario}>
+      <Text>Home page</Text>
+      <Button
+        title="Ir para o Formulario"
+        onPress={() => navigation.navigate("Formulario")}
+      >FORMULARIO</Button>
+    </View>
+   
+  );
 };
