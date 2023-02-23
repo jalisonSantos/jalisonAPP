@@ -11,6 +11,7 @@ export const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("Formulario")}
       >FORMULARIO</Button>
     </View>
+    
    
   );
 };
